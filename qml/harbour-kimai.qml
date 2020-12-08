@@ -94,7 +94,6 @@ ApplicationWindow
             projectList.clear();
             for(var i = 0; i < e.length; i++) {
                 var tl = e[i];
-                console.log(tl);
                 var item = {}
                 item.name = tl.name;
                 item.projectId = tl.id;
@@ -112,7 +111,7 @@ ApplicationWindow
                 console.log(tl);
                 var item = {}
                 item.name = tl.name;
-                item.id = tl.projectId;
+                item.activityId = tl.id;
                 model.append(item);
             }
         });

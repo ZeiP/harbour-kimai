@@ -19,8 +19,8 @@ SOURCES += src/harbour-kimai.cpp
 DISTFILES += qml/harbour-kimai.qml \
     qml/common/Settings.qml \
     qml/cover/CoverPage.qml \
-    qml/pages/ActivityList.qml \
     qml/pages/SettingsPage.qml \
+    qml/pages/StartTracking.qml \
     qml/pages/Statistics.qml \
     qml/pages/Tracker.qml \
     rpm/harbour-kimai.changes.in \
