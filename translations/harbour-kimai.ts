@@ -54,45 +54,44 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartTracking.qml" line="79"/>
+        <location filename="../qml/pages/StartTracking.qml" line="80"/>
         <source>Activity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartTracking.qml" line="99"/>
+        <location filename="../qml/pages/StartTracking.qml" line="100"/>
         <source>Begin date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/StartTracking.qml" line="46"/>
-        <location filename="../qml/pages/StartTracking.qml" line="81"/>
-        <location filename="../qml/pages/StartTracking.qml" line="100"/>
-        <location filename="../qml/pages/StartTracking.qml" line="115"/>
+        <location filename="../qml/pages/StartTracking.qml" line="82"/>
+        <location filename="../qml/pages/StartTracking.qml" line="101"/>
         <source>Select</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartTracking.qml" line="114"/>
+        <location filename="../qml/pages/StartTracking.qml" line="117"/>
         <source>Begin time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartTracking.qml" line="149"/>
+        <location filename="../qml/pages/StartTracking.qml" line="154"/>
         <source>Activity %1 started tracking for %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartTracking.qml" line="150"/>
+        <location filename="../qml/pages/StartTracking.qml" line="155"/>
         <source>Activity tracking started</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartTracking.qml" line="153"/>
+        <location filename="../qml/pages/StartTracking.qml" line="158"/>
         <source>Starting activity %1 tracking failed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartTracking.qml" line="154"/>
+        <location filename="../qml/pages/StartTracking.qml" line="159"/>
         <source>Activity tracking failed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -143,52 +142,52 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="34"/>
+        <location filename="../qml/pages/Tracker.qml" line="33"/>
         <source>Track time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="41"/>
+        <location filename="../qml/pages/Tracker.qml" line="40"/>
         <source>Scroll to top</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="53"/>
+        <location filename="../qml/pages/Tracker.qml" line="52"/>
         <source>Active timesheets</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="58"/>
+        <location filename="../qml/pages/Tracker.qml" line="57"/>
         <source>Nothing here</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="59"/>
+        <location filename="../qml/pages/Tracker.qml" line="58"/>
         <source>Check your settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="73"/>
+        <location filename="../qml/pages/Tracker.qml" line="72"/>
         <source>Stopping the timesheet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="183"/>
+        <location filename="../qml/pages/Tracker.qml" line="132"/>
         <source>Activity %1 stopped tracking for %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="184"/>
+        <location filename="../qml/pages/Tracker.qml" line="133"/>
         <source>Activity tracking stopped</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="187"/>
+        <location filename="../qml/pages/Tracker.qml" line="136"/>
         <source>Stopping activity %1 tracking failed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="188"/>
+        <location filename="../qml/pages/Tracker.qml" line="137"/>
         <source>Activity tracking failed</source>
         <translation type="unfinished"></translation>
     </message>

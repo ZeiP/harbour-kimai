@@ -26,7 +26,6 @@ Page {
             MenuItem {
                 text: qsTr("Refresh")
                 onClicked: {
-                /*    getContextsFromTracks(); */
                     getActiveTimesheets();
                 }
             }
@@ -85,7 +84,7 @@ Page {
                     anchors.top: label.bottom
                     anchors.right: parent.right
                     font.pixelSize: Theme.fontSizeSmall
-                    text: projectName
+                    text: activityName + "@" + projectName
                 }
 
                 Component {
@@ -94,66 +93,16 @@ Page {
                         MenuItem {
                             text: "Stop"
                             onClicked: stop()
+                            enabled: false
                         }
                     }
                 }
-                /*
-                width: parent.width
-                height: Theme.itemSizeMedium
-
-                Label { text: description } */
             }
             Component.onCompleted: {
-                /*getContextsFromTracks(); */
                 getActiveTimesheets();
             }
         }
     }
-
-    /*      delegate: ListItem {
-                id: listItem
-                width: ListView.view.width
-                contentHeight: Theme.itemSizeSmall
-                menu: contextMenu
-                ListView.onRemove: animateRemoval(listItem)
-
-                function done() {
-                    remorseAction(qsTr("Marking as done"), function() {
-                        var item = view.model.get(index);
-                        var todoId = item.todoId;
-                        var description = item.description;
-                        view.model.remove(index)
-                        setTaskAsDone(todoId, description);
-                    })
-                }
-
-                Label {
-                    id: label
-                    text: description
-                }
-                Label {
-                    anchors.top: label.bottom
-                    anchors.right: parent.right
-                    font.pixelSize: Theme.fontSizeSmall
-                    text: due
-                }
-
-                Component {
-                    id: contextMenu
-                    ContextMenu {
-                        MenuItem {
-                            text: "Done"
-                            onClicked: done()
-                        }
-                    }
-                }
-            }
-            Component.onCompleted: {
-              getTasksFromTracks(context);
-            }
-        }
-    }
-    */
 
     function getActiveTimesheets() {
         request("timesheets/active", "get", "", function(doc) {

@@ -64,6 +64,7 @@ Dialog {
                 }
 
                 Component.onCompleted: {
+                    getProjects();
                     for(var i = 0; i < projectList.count; ++i) {
                         if (projectList.get(i).projectId == projectId) {
                             project.currentIndex = i;
@@ -99,7 +100,9 @@ Dialog {
                 label: qsTr("Begin date")
                 value: qsTr("Select")
                 width: parent.width
-
+                Component.onCompleted: {
+                    value = new Date().toLocaleDateString(Qt.locale("en-GB"), "yyyy-MM-dd")
+                }
                 onClicked: {
                     var dialog = pageStack.push("Sailfish.Silica.DatePickerDialog", {date: new Date()})
 
@@ -112,11 +115,13 @@ Dialog {
             ValueButton {
                 id: beginTime
                 label: qsTr("Begin time")
-                value: qsTr("Select")
                 width: parent.width
-
+                Component.onCompleted: {
+                    value = new Date().toLocaleTimeString(Qt.locale("en-GB"), "hh:mm")
+                }
                 onClicked: {
-                    var dialog = pageStack.push("Sailfish.Silica.TimePickerDialog", {time: new Date()})
+                    var parts = value.split(':')
+                    var dialog = pageStack.push("Sailfish.Silica.TimePickerDialog", {hour: parts[0], minute: parts[1]})
 
                     dialog.accepted.connect(function() {
                         value = dialog.timeText
