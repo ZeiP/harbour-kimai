@@ -43,8 +43,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/StartTracking.qml" line="33"/>
         <location filename="../qml/pages/StartTracking.qml" line="34"/>
-        <location filename="../qml/pages/StartTracking.qml" line="35"/>
         <source>Description</source>
         <translation type="unfinished"></translation>
     </message>
@@ -76,22 +76,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartTracking.qml" line="154"/>
+        <location filename="../qml/pages/StartTracking.qml" line="135"/>
+        <source>Duration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StartTracking.qml" line="136"/>
+        <source>Duration (format HH:SS)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StartTracking.qml" line="163"/>
         <source>Activity %1 started tracking for %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartTracking.qml" line="155"/>
+        <location filename="../qml/pages/StartTracking.qml" line="164"/>
         <source>Activity tracking started</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartTracking.qml" line="158"/>
+        <location filename="../qml/pages/StartTracking.qml" line="167"/>
         <source>Starting activity %1 tracking failed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartTracking.qml" line="159"/>
+        <location filename="../qml/pages/StartTracking.qml" line="168"/>
         <source>Activity tracking failed</source>
         <translation type="unfinished"></translation>
     </message>

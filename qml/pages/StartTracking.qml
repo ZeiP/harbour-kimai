@@ -29,18 +29,18 @@ Dialog {
 
             TextField {
                 id: description
-                focus: true
                 width: parent.width
                 placeholderText: qsTr("Description")
                 label: qsTr("Description")
 
-                EnterKey.enabled: text.length > 0
+/*                EnterKey.enabled: text.length > 0
                 EnterKey.iconSource: "image://theme/icon-m-enter-next"
-                EnterKey.onClicked: note.focus = true
+                EnterKey.onClicked: note.focus = true */
             }
 
             ComboBox {
                 id: project
+                focus: true
                 width: parent.width
                 label: qsTr("Project")
                 value: qsTr("Select")
@@ -128,6 +128,13 @@ Dialog {
                     })
                 }
             }
+
+            TextField {
+                id: duration
+                width: parent.width
+                placeholderText: qsTr("Duration")
+                label: qsTr("Duration (format HH:SS)")
+            }
         }
     }
 
@@ -143,7 +150,9 @@ Dialog {
         requestData['activity'] = activityId
         requestData['description'] = description.text
 //        requestData['end'] =
-//        requestData['duration'] =
+        if (duration.text != '') {
+            requestData['duration'] = duration.text
+        }
         console.log(JSON.stringify(requestData));
 
         request("timesheets", "post", JSON.stringify(requestData), function(doc) {
