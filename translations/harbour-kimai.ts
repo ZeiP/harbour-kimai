@@ -109,28 +109,59 @@
 <context>
     <name>Statistics</name>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="21"/>
+        <location filename="../qml/pages/Statistics.qml" line="23"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="31"/>
+        <location filename="../qml/pages/Statistics.qml" line="33"/>
         <source>Scroll to top</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="43"/>
+        <location filename="../qml/pages/Statistics.qml" line="45"/>
         <source>Time stats</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="48"/>
-        <source>Nothing here</source>
+        <location filename="../qml/pages/Statistics.qml" line="72"/>
+        <source>Duration this month</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="49"/>
-        <source>Check your settings</source>
+        <location filename="../qml/pages/Statistics.qml" line="73"/>
+        <location filename="../qml/pages/Statistics.qml" line="77"/>
+        <source>%1 hours</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Statistics.qml" line="76"/>
+        <source>Total duration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Statistics.qml" line="80"/>
+        <source>Amount this month</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Statistics.qml" line="84"/>
+        <source>Total amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Statistics.qml" line="88"/>
+        <source>First entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Statistics.qml" line="92"/>
+        <source>Total records</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Statistics.qml" line="93"/>
+        <source>%1 pcs</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -1,0 +1,7 @@
+qml-w
+*.autosave
+*.qm
+*.pro.user
+rpm/harbour-*.changes.run.in
+harbour-*.pro.user*
+*.diff
