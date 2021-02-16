@@ -7,7 +7,7 @@ Page {
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: Orientation.All
 
-    ListModel { id: activeTimesheetsList }
+    ListModel { id: recentTimesheetsList }
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
@@ -20,17 +20,13 @@ Page {
                 onClicked: pageStack.push(Qt.resolvedUrl("SettingsPage.qml"))
             }
             MenuItem {
-                text: qsTr("History")
-                onClicked: pageStack.push(Qt.resolvedUrl("History.qml"))
-            }
-            MenuItem {
                 text: qsTr("Statistics")
                 onClicked: pageStack.push(Qt.resolvedUrl("Statistics.qml"))
             }
             MenuItem {
                 text: qsTr("Refresh")
                 onClicked: {
-                    getActiveTimesheets();
+                    getRecentTimesheets();
                 }
             }
             MenuItem {
@@ -53,7 +49,7 @@ Page {
             id: view
 
             header: PageHeader {
-                title: qsTr("Active timesheets")
+                title: qsTr("Recent timesheets")
             }
 
             ViewPlaceholder {
@@ -64,7 +60,7 @@ Page {
 
             width: parent.width
             height: parent.height
-            model: activeTimesheetsList
+            model: recentTimesheetsList
             delegate: ListItem {
                 id: listItem
                 width: ListView.view.width
@@ -72,22 +68,22 @@ Page {
                 menu: contextMenu
                 ListView.onRemove: animateRemoval(listItem)
 
-                function stop() {
-                    remorseAction(qsTr("Stopping the timesheet"), function() {
+                function remove() {
+                    remorseAction(qsTr("Deleting the timesheet"), function() {
                         var item = view.model.get(index);
-                        stopTimesheet(item.timesheetId, item.description);
+                        deleteTimesheet(item.timesheetId);
                         view.model.remove(index);
                     })
                 }
 
                 Label {
                     id: label
-                    text: description
+                    text: qsTr("%1: %2 h – %3 € @ %4").arg(description).arg((duration / 60 / 60).toFixed(2).toString()).arg(rate.toFixed(2)).arg(beginDate)
                 }
                 Label {
                     anchors.top: label.bottom
                     anchors.right: parent.right
-                    font.pixelSize: Theme.fontSizeSmall
+                    font.pixelSize: Theme.fontSizeExtraSmall
                     text: activityName + "@" + projectName
                 }
 
@@ -95,24 +91,24 @@ Page {
                     id: contextMenu
                     ContextMenu {
                         MenuItem {
-                            text: "Stop"
-                            onClicked: stop()
-                            enabled: false
+                            text: "Delete"
+                            onClicked: remove()
+                            enabled: true
                         }
                     }
                 }
             }
             Component.onCompleted: {
-                getActiveTimesheets();
+                getRecentTimesheets();
             }
         }
     }
 
-    function getActiveTimesheets() {
-        request("timesheets/active", "get", "", function(doc) {
+    function getRecentTimesheets() {
+        request("timesheets?active=0&full=true", "get", "", function(doc) {
             var e = JSON.parse(doc.responseText);
             console.log(doc.responseText);
-            activeTimesheetsList.clear();
+            recentTimesheetsList.clear();
             for(var i = 0; i < e.length; i++) {
                 var tl = e[i];
                 var item = {}
@@ -122,23 +118,30 @@ Page {
                 item.activityName = tl.activity.name;
                 item.activityId = tl.activity.id;
                 item.description = tl.description;
-                console.log(item);
-                activeTimesheetsList.append(item);
+                item.begin = tl.begin;
+                var date = new Date(tl.begin);
+                item.beginDate = date.getDate() + "." + date.getMonth() + "."
+                item.end = tl.end;
+                item.duration = tl.duration;
+                item.rate = tl.rate;
+                recentTimesheetsList.append(item);
             }
         });
     }
-    function stopTimesheet(timesheetId) {
-        request("timesheets/" + timesheetId + "/stop", "patch", "", function(doc) {
+
+    function deleteTimesheet(timesheetId) {
+        console.log("Deleteing" + timesheetId);
+        request("timesheets/" + timesheetId, "delete", "", function(doc) {
             console.log(doc.status);
             console.log(doc.responseText);
             var m = messageNotification.createObject(null);
-            if (doc.status === 200) {
-                m.body = qsTr("Activity %1 stopped tracking for %2.").arg(description.text).arg(context.value);
-                m.summary = qsTr("Activity tracking stopped")
+            if (doc.status === 204) {
+                m.body = qsTr("Activity %1 deleted.").arg(timesheetId);
+                m.summary = qsTr("Activity deleted")
             }
             else {
-                m.body = qsTr("Stopping activity %1 tracking failed.").arg(description.text);
-                m.summary = qsTr("Activity tracking failed")
+                m.body = qsTr("Deleting activity %1 failed.").arg(timesheetId);
+                m.summary = qsTr("Activity delete failed")
             }
             m.previewSummary = m.summary
             m.previewBody = m.body

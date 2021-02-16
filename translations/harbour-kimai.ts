@@ -10,6 +10,79 @@
     </message>
 </context>
 <context>
+    <name>History</name>
+    <message>
+        <location filename="../qml/pages/History.qml" line="19"/>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="23"/>
+        <source>Statistics</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="27"/>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="33"/>
+        <source>Track time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="40"/>
+        <source>Scroll to top</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="52"/>
+        <source>Recent timesheets</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="57"/>
+        <source>Nothing here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="58"/>
+        <source>Check your settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="72"/>
+        <source>Deleting the timesheet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="81"/>
+        <source>%1: %2 h – %3 € @ %4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="139"/>
+        <source>Activity %1 deleted.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="140"/>
+        <source>Activity deleted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="143"/>
+        <source>Deleting activity %1 failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/History.qml" line="144"/>
+        <source>Activity delete failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SettingsPage</name>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="12"/>
@@ -109,58 +182,58 @@
 <context>
     <name>Statistics</name>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="23"/>
+        <location filename="../qml/pages/Statistics.qml" line="19"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="33"/>
+        <location filename="../qml/pages/Statistics.qml" line="28"/>
         <source>Scroll to top</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="45"/>
+        <location filename="../qml/pages/Statistics.qml" line="40"/>
         <source>Time stats</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="72"/>
+        <location filename="../qml/pages/Statistics.qml" line="67"/>
         <source>Duration this month</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="73"/>
-        <location filename="../qml/pages/Statistics.qml" line="77"/>
+        <location filename="../qml/pages/Statistics.qml" line="68"/>
+        <location filename="../qml/pages/Statistics.qml" line="72"/>
         <source>%1 hours</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="76"/>
+        <location filename="../qml/pages/Statistics.qml" line="71"/>
         <source>Total duration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="80"/>
+        <location filename="../qml/pages/Statistics.qml" line="75"/>
         <source>Amount this month</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="84"/>
+        <location filename="../qml/pages/Statistics.qml" line="79"/>
         <source>Total amount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="88"/>
+        <location filename="../qml/pages/Statistics.qml" line="83"/>
         <source>First entry</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="92"/>
+        <location filename="../qml/pages/Statistics.qml" line="87"/>
         <source>Total records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Statistics.qml" line="93"/>
+        <location filename="../qml/pages/Statistics.qml" line="88"/>
         <source>%1 pcs</source>
         <translation type="unfinished"></translation>
     </message>
@@ -174,61 +247,66 @@
     </message>
     <message>
         <location filename="../qml/pages/Tracker.qml" line="23"/>
-        <source>Statistics</source>
+        <source>History</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Tracker.qml" line="27"/>
+        <source>Statistics</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Tracker.qml" line="31"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="33"/>
+        <location filename="../qml/pages/Tracker.qml" line="37"/>
         <source>Track time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="40"/>
+        <location filename="../qml/pages/Tracker.qml" line="44"/>
         <source>Scroll to top</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="52"/>
+        <location filename="../qml/pages/Tracker.qml" line="56"/>
         <source>Active timesheets</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="57"/>
+        <location filename="../qml/pages/Tracker.qml" line="61"/>
         <source>Nothing here</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="58"/>
+        <location filename="../qml/pages/Tracker.qml" line="62"/>
         <source>Check your settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="72"/>
+        <location filename="../qml/pages/Tracker.qml" line="76"/>
         <source>Stopping the timesheet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="132"/>
+        <location filename="../qml/pages/Tracker.qml" line="136"/>
         <source>Activity %1 stopped tracking for %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="133"/>
+        <location filename="../qml/pages/Tracker.qml" line="137"/>
         <source>Activity tracking stopped</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="136"/>
+        <location filename="../qml/pages/Tracker.qml" line="140"/>
         <source>Stopping activity %1 tracking failed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tracker.qml" line="137"/>
+        <location filename="../qml/pages/Tracker.qml" line="141"/>
         <source>Activity tracking failed</source>
         <translation type="unfinished"></translation>
     </message>
